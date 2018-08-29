@@ -48,6 +48,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects',
+    projectMessage: 'Projects portfolio'
+  });
+});
+
 // app.get('/', (req, res) => {
 //   // res.send('<h1>I will hunt Joni, I will find Joni, and I will kill Joni.<h1>')
 //   res.send({
